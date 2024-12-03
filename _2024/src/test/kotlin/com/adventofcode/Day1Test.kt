@@ -1,6 +1,7 @@
 package com.adventofcode
 
 import com.adventofcode.common.CsvReader
+import com.adventofcode.common.SolutionPrinter
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
@@ -59,7 +60,7 @@ class Day1Test {
             }
 
         val solution = Day1.solvePart1(left, right)
-        printSolution(solution)
+        SolutionPrinter.print(solution)
     }
 
     /**
@@ -112,10 +113,6 @@ class Day1Test {
             }
 
         val solution = Day1.solvePart2(left, right)
-        printSolution(solution)
-    }
-
-    private fun printSolution(solution: Int) {
-        println("Solution: $solution")
+        SolutionPrinter.print(solution)
     }
 }
